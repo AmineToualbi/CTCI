@@ -1,0 +1,61 @@
+
+public class Driver  {
+	
+	
+	public static void removeDups(LinkedListNode node) {
+		
+		LinkedListNode current = node;
+		LinkedListNode runner = node; 
+		
+		while(current.next != null) {
+			
+			while(runner.next != null) {
+				//System.out.print(runner.data + " ");
+				if(runner.next.data == current.data && runner.next.next != null) {
+					runner.next = runner.next.next;
+				}
+				runner = runner.next;
+				
+			}
+			
+			//System.out.println();
+			current = current.next; 
+			runner = current; 
+			
+			
+			
+		}
+		
+		printList(node);
+//		
+	}
+	
+	public static void printList(LinkedListNode node) {
+		
+		LinkedListNode head = node; 
+		LinkedListNode runner = head;
+		while(runner.next != null) {
+			System.out.print(runner.data + " ");
+			runner = runner.next;
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		LinkedListNode head = new LinkedListNode(10);
+		head.next = new LinkedListNode(11);
+		head.next.next = new LinkedListNode(7);
+		head.next.next.next = new LinkedListNode(9);
+		head.next.next.next.next = new LinkedListNode(5);
+		head.next.next.next.next.next = new LinkedListNode(10);
+		head.next.next.next.next.next.next = new LinkedListNode(15);
+		head.next.next.next.next.next.next.next = new LinkedListNode(11);
+		
+		printList(head);
+		System.out.println();
+		removeDups(head);
+
+	}
+
+}

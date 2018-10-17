@@ -1,0 +1,40 @@
+
+public class Driver {
+	
+	public static boolean permutation(String w1, String w2) {
+		
+		StringBuilder sb1 = new StringBuilder(w1);
+		StringBuilder sb2 = new StringBuilder(w2);
+		
+		for(int i=0; i<sb1.length(); i++) {
+			char character = sb1.charAt(0);
+			System.out.println(character);
+			for(int j=0; j<sb2.length(); j++) {
+				if(sb2.charAt(j) == character) {
+					sb1.deleteCharAt(0);
+					sb2.deleteCharAt(j);
+					break;
+					System.out.println("deletion");
+				}
+		}
+		
+		}
+		if(sb2.length() == 0 && sb1.length() == 0) {
+			return true;
+		}
+		return false;
+		
+	}
+
+	public static void main(String[] args) {
+		String[][] pairs = {{"apple", "papel"}, {"carrot", "tarroc"}, {"hello", "llloh"}};
+		for (String[] pair : pairs) {
+			String word1 = pair[0];
+			String word2 = pair[1];
+			boolean anagram = permutation(word1, word2);
+			System.out.println(word1 + ", " + word2 + ": " + anagram);
+		}
+
+	}
+
+}

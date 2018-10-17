@@ -1,0 +1,5 @@
+INDEX VERSION 1.130+/Users/toualbiamine/Documents/CrackingTheCodingInterview/.metadata/.plugins/org.eclipse.jdt.core
+758412910.index
+3943502453.index
+881954225.index
+3292780666.index

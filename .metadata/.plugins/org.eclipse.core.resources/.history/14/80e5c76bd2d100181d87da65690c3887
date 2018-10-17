@@ -1,0 +1,24 @@
+
+public class Driver {
+	
+	
+	public static void removeDups(LinkedListNode node) {
+		
+		LinkedListNode runner = node; 
+		
+		while(runner.next != null) {
+			runner = runner.next; 
+			
+			if(runner.data == node.data) {
+				runner.next = runner.next.next;
+			}
+			
+		}
+		
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
