@@ -59,8 +59,6 @@ public class SumList {
 		
 		return result;
 		
-		
-		
 	}
 	
 	public static void printNodes(Node head) {
