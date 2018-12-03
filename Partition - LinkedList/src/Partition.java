@@ -19,8 +19,8 @@ public class Partition {
 			/* Partition list */
 			while (node != null) {
 				
-				//LinkedListNode next = node.next;
-				//node.next = null;
+				LinkedListNode next = node.next;
+				node.next = null;
 				System.out.println(node.data);
 				
 				if (node.data < x) {
@@ -41,7 +41,8 @@ public class Partition {
 					}
 				}
 				
-				node = node.next;
+				//node = node.next;
+				node = next; 
 				
 			}
 			
@@ -70,14 +71,14 @@ public static void printNodes(LinkedListNode head) {
 		// TODO Auto-generated method stub
 		
 		LinkedListNode head = new LinkedListNode(3);
-		head.next = new LinkedListNode(5);
+		head.next = new LinkedListNode(9);
 		head.next.next = new LinkedListNode(8);
 		head.next.next.next = new LinkedListNode(5);
 		head.next.next.next.next = new LinkedListNode(10);
 		head.next.next.next.next.next = new LinkedListNode(2);
 		head.next.next.next.next.next.next = new LinkedListNode(1);
 		
-		LinkedListNode result = partition(head,5);
+		LinkedListNode result = partition(head,3);
 		
 		printNodes(result);
 		
