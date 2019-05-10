@@ -1307,3 +1307,13 @@ Java Model Exception: Java Model Status [<project root> [in LongestPalindrome] i
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1006 2019-01-15 15:25:34.139
 !MESSAGE <project root> [in LongestPalindrome] is not on its project's build path
+!SESSION 2019-05-10 19:23:31.053 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/toualbiamine/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/toualbiamine/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-10 19:23:41.652
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
