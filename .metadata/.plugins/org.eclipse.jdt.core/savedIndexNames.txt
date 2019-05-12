@@ -34,7 +34,6 @@ INDEX VERSION 1.130+/Users/toualbiamine/Documents/CrackingTheCodingInterview/.me
 3038741271.index
 3292780666.index
 3458098584.index
-1589246762.index
 2726947344.index
 3412735210.index
 3860499813.index
